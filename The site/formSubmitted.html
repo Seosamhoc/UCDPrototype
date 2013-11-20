@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quick and dirty QueryString Parser</title>
+
+    <script>
+    function getQuerystring(key, default_)
+    {
+      if (default_==null) default_="";
+      key = key.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+      var regex = new RegExp("[\\?&]"+key+"=([^&#]*)");
+      var qs = regex.exec(window.location.href);
+      if(qs == null)
+        return default_;
+      else
+        return qs[1];
+    }
+    </script>
+  <meta HTTP-EQUIV="refresh" CONTENT="2; URL=members.html">
+</head>
+
+<body>
+    You've successfully logged in/registered!
+</body>
+</html>
+
+

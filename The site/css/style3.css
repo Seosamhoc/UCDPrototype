@@ -1,0 +1,32 @@
+
+#menu 
+{
+	float: left;
+	margin: 10px 10px 0 0;
+}
+#menu li
+{
+	list-style:none;
+}
+#menu li a 
+{
+	float: left;
+	min-width: 200px;
+	min-height: 30px;
+	margin: 0 20px 0 20px;
+}
+#menu li a:hover 
+{
+}
+
+.new_fb_login{background-image: url('../img/login-button.png'); width:200px;height:22px; font-weight: bolder; font-size:11px;color:#fff; text-align: center;}
+
+#header
+{
+font-size: 40px;
+}
+
+.btn
+{
+	min-width: 200px;
+}
